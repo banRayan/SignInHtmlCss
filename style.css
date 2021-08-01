@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 93,75%; /* 15px*/
+}
+
+body{
+    background:  #f0f2f5;
+    font-family: sans-serif;
+}
+
+:root{
+    --title-font-size: 1rem;
+    --subtitle-font-size: 1rem;
+    
+    --title-font: 'Fira Sans', sans-serif;
+    --subtitle-font: 'Poppins', sans-serif;
+    --body-font: 'DM Sans', sans-serif;
+
+    --color-black05: rgba(1, 1, 1, 0.5);
+    --color-modal-background: rgba(255, 255, 255, 1);  
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    width: 23rem;
+
+    background: var(--color-modal-background);
+    border-radius: 0.5rem;
+    padding: 4rem 3rem 4rem 3rem;
+    
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 2.8px 17.9px rgba(0, 0, 0, 0.072),
+    0 2.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.form{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.container-input-area{
+    margin-top: 1rem;
+}
+
+.input {
+    width: 100%;
+    height: 2.5rem;
+    border: 0.1rem solid rgba(1, 1, 1, 0.1);
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    outline: none; /*borda de seleção*/ 
+    padding: 0.5rem 0 0.5rem 2.5rem;
+    transition: .3s;
+}
+
+.modal .icon-x-container{
+    display: flex;
+    justify-content: flex-end;   
+    z-index: 1;
+    margin-top: -2rem;
+    margin-right: -1rem ;
+}
+
+.icon-x{
+    color: var(--color-black05);
+}
+
+
+
+.icon-input-container{
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+}
+
+.icon-container{
+    position: absolute;
+    align-self: center;
+    margin-left: 1rem;
+    color: var(--color-black05)
+}
+
+.icon-google{
+    position: absolute;
+
+    width: 1rem;
+    height: 1rem;
+    margin-left: 2rem;
+}
+
+.title { 
+    margin-bottom: 1rem;
+}
+
+.title h1{
+    font-family: var(--title-font);
+    text-align: center;
+    margin-bottom: 1rem
+}
+
+.title p{
+    font-family: var(--subtitle-font);
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--color-black05);
+
+    text-align: center;
+}
+
+.container-label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.label{
+    font: 700 0.7rem var(--subtitle-font);
+    color: var(--color-black05);
+}
+
+.button-show{
+    font: 500 .8rem var(--body-font);
+    color: var(--color-black05);
+    border: none;
+    background: none;
+
+    transition: .3s
+}
+
+.button-show:hover{
+    color: rgba(1, 1, 1, 0.7);
+}
+
+.button-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.button-container button{
+    width: 100%;
+    height: 2.5rem;
+
+    background: #f0f2f5;
+    border: none;
+    border-radius: 0.5rem;
+   
+    margin-top: 1rem;
+    font: 700 0.8rem var(--subtitle-font);
+    color: var(--color-black05);
+
+    cursor: pointer;
+}
+
+.button-container .button-google{
+    font: 700 0.8rem var(--body-font);
+    background: rgb(226,240,250);
+    color: #3eb2f7;
+
+    transition: .5s;
+}
+
+.button-container .button-signIn:hover{
+    background-color: var(--color-black05);
+    color: #f0f2f5;
+    transition: .5s;
+}
+.button-container .button-google:hover{
+    background-color: #3eb2f7;
+    color: rgb(226,240,250);
+}
+
+
+.divider {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2rem 0 1rem 0;
+
+    border: 0.1rem  solid rgba(1, 1, 1, 0.1);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+
+.text-divider{
+    position: absolute;
+}
+
+.divider p{
+    font: 500 0.8rem var(--subtitle-font);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 3px;
+    color: rgba(1, 1, 1, 0.3);
+
+}
+
+
+.sign-up{
+    margin-top: 1rem;
+    text-align: center;
+}
+.sign-up a{
+    font: 500 0.8rem var(--body-font);
+    text-decoration: none;
+}

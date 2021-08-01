@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- informações da página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="/assets/ghost.png" />
+
+    <!-- estilo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,500;0,700;1,400&DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Título -->
+    <title>Sign In</title>
+</head>
+<body>
+    <main class="container">
+        <div class="modal">
+            <div class="icon-x-container">
+                <div class="icon-x"></div>
+            </div>
+            <div class="form">
+                <div class="title">
+                    <h1>ghostWriter</h1>
+                    <p>Faça login para acessar sua conta</p>
+                </div>
+                <form action="">
+                    <div class="container-input-area">
+                        <label for="name" class="label">Ghost Mail</label><br>
+                        <div class="icon-input-container">
+                            <div class="icon-container">
+                                <div class="icon-at-sign"></div>
+                            </div>
+                            <input type="text" class="input" id="email" placeholder="ghostmail.com" required>   
+                        </div>
+                    </div>
+
+                    <div class="container-input-area">
+                        <div class="container-label">
+                            <label for="name" class="label">Senha</label><br>
+                            <button type="button" class="button-show"onclick="showPassword()">mostrar senha</button>
+                        </div>
+                        <div class="icon-input-container">
+                            <div class="icon-container">
+                                <div class="icon-lock" id="lock"></div>
+                            </div>
+                            <input type="password" class="input" id="password" value="password" style="color: rgba(1, 1, 1, 0.5)" required>   
+                        </div>
+                    </div>
+
+                    <div class="button-container">
+                        <button class="button-signIn">Sign in</button>
+                    </div>
+
+                    <div class="divider">
+                        <p class="text-divider">or</p>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="button" class="button-google">Faça login no Google</button>
+                        <div class="icon-container">
+                            <img class="icon-google" src="assets/google-logo.png" alt="Logo gogle">
+                        </div>
+                    </div>
+
+                    <div class="sign-up">
+                        <a href="https://accounts.google.com/signup/v2/webcreateaccount?ser" target="_blank">Não tem uma conta? inscrever-se</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
