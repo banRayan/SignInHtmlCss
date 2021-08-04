@@ -6,5 +6,5 @@
 - Flex Box
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/84761488/128203709-209cbb95-632e-4a88-b6b0-6e1444aadb8c.png" width="1080px" height="400">
+  <img src="https://user-images.githubusercontent.com/84761488/128203709-209cbb95-632e-4a88-b6b0-6e1444aadb8c.png" width="1080px">
 </div>
